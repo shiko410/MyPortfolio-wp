@@ -1,0 +1,15 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /My-Portfolio-wp/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /My-Portfolio-wp/index.php [L]
+</IfModule>
+
+# END WordPress
+
+#user: test1
+#pass: pass1234
