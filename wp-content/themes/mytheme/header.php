@@ -18,25 +18,27 @@ if ( !defined( 'ABSPATH' ) ) exit;
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
 
-<?php wp_head(); ?>
 
 <?php //ヘッドタグ内挿入用のユーザー用テンプレート
 get_template_part('tmp/head-insert'); ?>
 
 <title>
-<?php   ?>
 <?php wp_title( '|', true, 'right'); // 記事のタイトルやカテゴリ |?>
 <?php bloginfo( 'name' ); // サイト名?>
 </title>
 
-<link rel="stylesheet"
- href="<?php echo get_stylesheet_uri(); ?>">
+<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
 
+<?php wp_head(); ?>
 </head>
-<?php 	// HEADはここまで BODY開始		?>
+<?php // ====== HEADはここまで BODY開始 ==========	?>
 
 <body <?php body_class(); ?>>
 
-<?php //ユーザーカスタマイズ用(headerの前に挿入したいものがあれば以下に記述)
-get_template_part('tmp-user/body-top-insert');
+<?php
+//ユーザーカスタマイズ用(headerの前に挿入したいものがあれば以下に記述)
+get_template_part('tmp/body-top-insert');
+
+//ユーザーカスタマイズ用(headerに挿入したいものがあれば以下に記述)
+get_template_part('tmp/header-insert');
 ?>
