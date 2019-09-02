@@ -7,7 +7,10 @@
  */
 if ( !defined( 'ABSPATH' ) ) exit;
 
-
+/*
+	スタイルシートとJSフアイルの読み込み
+	-----------------------------
+*/
 function add_my_files() {
 	//スタイルシートの読み込み
 	// CDN
@@ -59,7 +62,7 @@ function add_my_files() {
 		get_template_directory_uri() . '/js/vegas.min.js',
 		array( 'jquery' ),
 		'20190901',
-		true
+		false
 	);
   	//main.js の読み込み
 	wp_enqueue_script('main_js',
@@ -80,15 +83,22 @@ function add_my_files() {
 add_action('wp_enqueue_scripts', 'add_my_files');
 
 
-
+/*
+			画像パスの修正
+	--------------------------------
+ */
 // 画像パスの省略	get_template_directory_uri()　get_stylesheet_directory_uri()
-function replaceImagePath($arg) {
-    $content = str_replace('"img/', '"' . get_stylesheet_directory_uri() . '/images/', $arg );
-        return $content;
-}
-add_action('the_content', 'replaceImagePath');
+// function replaceImagePath($arg) {
+//     $content = str_replace('"img/', '"' . get_stylesheet_directory_uri() . '/images/', $arg );
+//         return $content;
+// }
+// add_action('the_content', 'replaceImagePath');
 
-
+// function img_replace_filter($content){
+// $content = str_replace('"img/', '"' . get_bloginfo('template_directory') . '/img/', $content);
+// return $content;
+// }
+// add_filter('the_content','img_replace_filter');
 
 
 

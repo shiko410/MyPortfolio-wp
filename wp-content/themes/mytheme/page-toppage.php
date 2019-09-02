@@ -70,7 +70,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 								<!--  Article -->
 								<div class="my-photo col-md-12 col-lg-6" data-aos="fade-up-right" data-aos-duration="1500">
 									<!-- Photo -->
-									<img src="img/id-photo-2.jpg" alt="プロフィール写真" class="rounded-circle">
+									<img src="<?php echo(get_theme_file_uri()); ?>/img/id-photo-2.jpg" alt="プロフィール写真" class="rounded-circle">
 									<!-- // Photo -->
 									<h3 class="my-name">shiko tamai</h3>
 									<article class="text-left">
@@ -155,24 +155,24 @@ if ( !defined( 'ABSPATH' ) ) exit;
 									<div class="icons row p-0 p-md-3">
 										<div class="skl-icons col-12 col-md-6 d-flex mx-auto p-0">
 											<div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
-												<img src="img/icon/html5-logo.png" alt="html5">
+												<img src="<?php echo(get_theme_file_uri()); ?>/img/icon/html5-logo.png" alt="html5">
 											</div>
 											<div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
-												<img src="img/icon/css3-logo.png" alt="css3">
+												<img src="<?php echo(get_theme_file_uri()); ?>/img/icon/css3-logo.png" alt="css3">
 											</div>
 											<div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
-												<img src="img/icon/js-logo.png" alt="JavaScript">
+												<img src="<?php echo(get_theme_file_uri()); ?>/img/icon/js-logo.png" alt="JavaScript">
 											</div>
 										</div>
 										<div class="skl-icons col-12 col-md-6 d-flex mx-auto p-0">
 											<div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
-												<img src="img/icon/php-color.svg" alt="php">
+												<img src="<?php echo(get_theme_file_uri()); ?>/img/icon/php-color.svg" alt="php">
 											</div>
 											<div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
-												<img src="img/icon/MySQL-logo.png" alt="MySQL">
+												<img src="<?php echo(get_theme_file_uri()); ?>/img/icon/MySQL-logo.png" alt="MySQL">
 											</div>
 											<div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
-												<img src="img/icon/wordpress-logo.png" alt="WordPress">
+												<img src="<?php echo(get_theme_file_uri()); ?>/img/icon/wordpress-logo.png" alt="WordPress">
 											</div>
 										</div>
 									</div>
@@ -180,24 +180,24 @@ if ( !defined( 'ABSPATH' ) ) exit;
 									<div class="icons row p-0 p-md-3">
 										<div class="skl-icons col-12 col-md-6 d-flex mx-auto p-0">
 											<div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
-												<img src="img/icon/jquery-logo.png" alt="jQuery">
+												<img src="<?php echo(get_theme_file_uri()); ?>/img/icon/jquery-logo.png" alt="jQuery">
 											</div>
 											<div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
-												<img src="img/icon/laravel-color.svg" alt="laravel">
+												<img src="<?php echo(get_theme_file_uri()); ?>/img/icon/laravel-color.svg" alt="laravel">
 											</div>
 											<div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
-												<img src="img/icon/sass-color.svg" alt="sass">
+												<img src="<?php echo(get_theme_file_uri()); ?>/img/icon/sass-color.svg" alt="sass">
 											</div>
 										</div>
 										<div class="skl-icons col-12 col-md-6 d-flex mx-auto p-0">
 											<div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
-												<img src="img/icon/github-logo.png" alt="github">
+												<img src="<?php echo(get_theme_file_uri()); ?>/img/icon/github-logo.png" alt="github">
 											</div>
 											<div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
-												<img src="img/icon/adobe-illustrator-cs6.png" alt="illustrator">
+												<img src="<?php echo(get_theme_file_uri()); ?>/img/icon/adobe-illustrator-cs6.png" alt="illustrator">
 											</div>
 											<div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
-												<img src="img/icon/adobe-photoshop-cs6.png" alt="photoshop">
+												<img src="<?php echo(get_theme_file_uri()); ?>/img/icon/adobe-photoshop-cs6.png" alt="photoshop">
 											</div>
 										</div>
 									</div>
@@ -288,7 +288,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 								</div>
 								<div class="box col-12 d-flex">
 									<div class="mx-auto">
-										<img src="img/portfolio-2.png" class="swiper-slide" alt="ポートフォリオサイト">
+										<img src="<?php echo(get_theme_file_uri()); ?>/img/portfolio-2.png" class="swiper-slide" alt="ポートフォリオサイト">
 									</div>
 									<!-- <div class="mx-auto"> -->
 										<!-- <img src="img/portfolio-2.png" class="swiper-slide" alt="ポートフォリオサイト"> -->
