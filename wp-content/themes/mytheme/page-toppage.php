@@ -318,25 +318,10 @@ if ( !defined( 'ABSPATH' ) ) exit;
 									<!-- Contact Form -->
 									<div class="d-flex col-12 col-lg-6 order-lg-2">
 										<div class="info mx-auto">
-											<div role="form" class="wpcf7" id="wpcf7-f5-o1" lang="ja" dir="ltr">
-												<div class="screen-reader-response"></div>
-												<form action="/#wpcf7-f5-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-													<div style="display: none;">
-														<input type="hidden" name="_wpcf7" value="5" />
-														<input type="hidden" name="_wpcf7_version" value="5.1.1" />
-														<input type="hidden" name="_wpcf7_locale" value="ja" />
-														<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f5-o1" />
-														<input type="hidden" name="_wpcf7_container_post" value="0" />
-														<input type="hidden" name="g-recaptcha-response" value="" />
-													</div>
-													<p><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="名前" /></span> </p>
-													<p><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="メールアドレス" /></span> </p>
-													<p><span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="タイトル" /></span> </p>
-													<p><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="内容"></textarea></span> </p>
-													<div class="wpcf7-response-output wpcf7-display-none"></div>
-													<p><input type="submit" value="送信" class="wpcf7-form-control wpcf7-submit d-block mx-auto" /></p>
-												</form>
-											</div>
+
+
+											<?php echo do_shortcode( '[contact-form-7 id="8" title="footer contact form"]' ); ?>
+
 										</div>
 									</div>
 									<!-- // Contact Form -->
@@ -373,6 +358,6 @@ if ( !defined( 'ABSPATH' ) ) exit;
 			</main><!-- // main -->
 
 
-</div>
+		</div>
 
-<?php get_footer(); // footer.phpの読み込み ?>
+		<?php get_footer(); // footer.phpの読み込み ?>

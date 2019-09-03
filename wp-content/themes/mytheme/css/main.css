@@ -367,6 +367,17 @@ span.sm {
   margin: 0 .5rem;
 }
 
+/* custom */
+.info input {
+  width: 382px;
+}
+.info input[type=submit] {
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+}
+
+
 /*============= TOP SCROLL =============*/
 .top-scroll svg.svg-inline--fa {
   font-size: 3rem;
