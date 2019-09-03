@@ -354,7 +354,7 @@ span.sm {
 .swiper-container {
   /*max-width: 700px;*/
 }
-/*.swiper-wrapper {
+.swiper-wrapper {
   width: 100%;
   height: 500px;
 }
@@ -368,12 +368,12 @@ span.sm {
   .swiper-container {
     width: 400px;
   }
-}*/
+}
 a.modal-w {
     /*width: 300px;*/
     /*height: 500px;*/
 }
-#portfolio img {
+#portfolio img.swiper-slide {
   width: 300px;
   height: 500px;
 }
@@ -394,7 +394,7 @@ a.modal-w {
   top: 50%;
   left: 50%;
   z-index: 2;
-  width: 340px;
+  width: 300px;
   height: 60%;
   overflow-y: scroll;
   transform: translateZ(0);
@@ -403,9 +403,9 @@ a.modal-w {
 #overLayer img {
   width: 100%;
 }
-.close {
+.close-m {
   display: none; /* 初期状態 */
-  position: absolute;
+  position: fixed;
     top: 80%;
     left: 0;
     right: 0;
