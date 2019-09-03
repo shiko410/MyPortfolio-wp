@@ -372,9 +372,41 @@ span.sm {
   /*width: 382px;*/
 }
 .info input[type=submit] {
-  width: 20%;
+  width: 150px;
   display: block;
   margin: 0 auto;
+  letter-spacing: 3px;
+
+  border-radius : 8px;          /* 角丸       */
+  font-size     : inherit;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 10px 20px;   /* 余白       */
+  background    : #ff0000;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  box-shadow    : 0px 0px 8px #666666;  /* 影の設定 */
+  border        : 2px solid #ff0000;
+
+}
+
+.info input[type=submit]:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #ff0000;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.info span {
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info span.wpcf7-not-valid-tip {
+    /*width: 374px;*/
+    width: 334px;
+    text-align: left;
+    display: block;
 }
 
 
@@ -478,6 +510,7 @@ footer .row p {
   }
   /* =========== Portfolio Section =========== */
   /* =========== Contact Section =========== */
+
 }
 
 /* =======================================
@@ -500,6 +533,9 @@ footer .row p {
   }
   #service h3 {
     font-size: 2.2vw;
+  }
+  .info span.wpcf7-not-valid-tip {
+    width: 374px;
   }
 }
 

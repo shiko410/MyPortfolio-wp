@@ -7,3 +7,5 @@
  */
 if ( !defined( 'ABSPATH' ) ) exit;
 ?>
+
+<link rel="icon" href="<?php echo(get_theme_file_uri()); ?>/img/favicon.ico">

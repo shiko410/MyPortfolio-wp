@@ -20,7 +20,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 
 <?php //ヘッドタグ内挿入用のユーザー用テンプレート
-get_template_part('tmp/head-insert'); ?>
+get_template_part('tmp/head-insert'); // ファビコン ?>
 
 <title>
 <?php wp_title( '|', true, 'right'); // 記事のタイトルやカテゴリ |?>
