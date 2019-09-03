@@ -102,6 +102,31 @@ $(function() { //when document is ready
 });
 
 
+/*========== MODAL WINDOW ==========*/
+/* ---------------------------------------------------------
+ モーダルウィンドウ
+---------------------------------------------------------- */
+$(function(){
+
+  // $(document).on('click', 'a.modal-w', function() {
+  //   $('#glayLayer, .close').fadeIn();
+  //   $('#overLayer')
+  //     .fadeIn()
+  //     .html(
+  //       "<img src='" + $(this).attr("href") + "'>" )
+  //     .css({
+  //       "margin-top":"-" + $('#overLayer').height()/2 + "px",
+  //       "margin-left":"-" + $('#overLayer').width()/2 + "px",
+  //     });
+  //   return false;
+  // });
+
+  $('#glayLayer, .close').click(function(){
+    $('#glayLayer, .close').fadeOut();
+    $('#overLayer').fadeOut();
+    return false;
+  });
+});
 
 
 

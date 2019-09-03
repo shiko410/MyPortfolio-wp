@@ -288,7 +288,26 @@ if ( !defined( 'ABSPATH' ) ) exit;
 								</div>
 								<div class="box col-12 d-flex">
 									<div class="mx-auto">
-										<img src="<?php echo(get_theme_file_uri()); ?>/img/portfolio-2.png" class="swiper-slide" alt="ポートフォリオサイト">
+										<?php // ▼ モーダルウィンドウ ?>
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<a href="<?php echo(get_theme_file_uri()); ?>/img/portfolio-1-1.png" class="modal-w">
+													<img src="<?php echo(get_theme_file_uri()); ?>/img/portfolio-1.png" class=" swiper-slide" alt="portfolio1">
+												</a>
+												<a href="<?php echo(get_theme_file_uri()); ?>/img/portfolio-2-1.png" class="modal-w">
+													<img src="<?php echo(get_theme_file_uri()); ?>/img/portfolio-2.png" class=" swiper-slide" alt="portfolio2">
+												</a>
+											</div>
+											<div id="glayLayer"></div>
+											<div id="overLayer"></div>
+											<div class="close">閉じる</div>
+											<div class="swiper-pagination"></div>
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-button-next"></div>
+										</div>
+										<?php // ▲ モーダルウィンドウ ?>
+
+										<!-- <img src="<?php // echo(get_theme_file_uri()); ?>/img/portfolio-2.png" class="swiper-slide" alt="ポートフォリオサイト"> -->
 									</div>
 									<!-- <div class="mx-auto"> -->
 										<!-- <img src="img/portfolio-2.png" class="swiper-slide" alt="ポートフォリオサイト"> -->
