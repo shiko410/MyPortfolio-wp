@@ -114,19 +114,34 @@ $(function(){
       .fadeIn()
       .html(
         "<img src='" + $(this).attr("href") + "'>" )
-      .css({
-        "margin-top":"-" + $('#overLayer').height()/2 + "px",
-        "margin-left":"-" + $('#overLayer').width()/2 + "px",
-      });
+      .addClass('zoom-in');
+    $('body').css('overflow', 'hidden');
     return false;
-    $('#overLayer').append('<div id="one">', '<div id="two">');
   });
 
   $('#glayLayer, .close-m').click(function(){
     $('#glayLayer, .close-m').fadeOut();
     $('#overLayer').fadeOut();
+    $('body').css('overflow', 'auto');
+    if ($('#overLayer').hasClass('zoom-out')){$('#overLayer').removeClass('zoom-out')}
     return false;
   });
+
+  // 画像の拡大・縮小
+$('#overLayer').on('click', function() {
+  var zoom = $('#overLayer').hasClass('zoom-out');
+    if (!zoom) {
+      // モーダルを拡大
+      $(this)
+      .addClass('zoom-out').removeClass('zoom-in')
+      ;
+    } else {
+      // もとに戻す
+      $(this)
+      .removeClass('zoom-out').addClass('zoom-in')
+      ;
+    }
+});
 });
 
 

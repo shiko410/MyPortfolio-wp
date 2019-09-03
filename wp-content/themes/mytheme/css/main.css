@@ -393,15 +393,24 @@ a.modal-w {
   position: fixed;
   top: 50%;
   left: 50%;
+  -webkit- transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
   z-index: 2;
   width: 300px;
   height: 60%;
   overflow-y: scroll;
-  transform: translateZ(0);
 }
 
 #overLayer img {
   width: 100%;
+}
+.zoom-in {
+  cursor: zoom-in;
+}
+#overLayer.zoom-out {
+  width:90vw;
+  max-width: 100%;
+  cursor: zoom-out;
 }
 .close-m {
   display: none; /* 初期状態 */
