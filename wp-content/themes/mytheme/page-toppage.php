@@ -316,20 +316,17 @@ if ( !defined( 'ABSPATH' ) ) exit;
 										<span>- お問い合わせ -</span>
 									</div>
 									<!-- Contact Form -->
-									<div class="d-flex col-12 col-lg-6 order-lg-2">
+									<div class="d-flex col-12 col-lg-6 order-lg-2 pb-0 pt-lg-5">
 										<div class="info mx-auto">
-
-
 											<?php echo do_shortcode( '[contact-form-7 id="8" title="footer contact form"]' ); ?>
-
 										</div>
 									</div>
 									<!-- // Contact Form -->
 									<!-- info -->
-									<div class="info d-flex col-12 col-lg-6 order-lg-1 pt-0">
+									<div class="info d-flex col-12 col-lg-6 order-lg-1 pt-lg-5">
 										<div class="box mx-auto">
 											<dl>
-												<dt class="text-center pt-0 pb-3 p-md-5">連絡先</dt>
+												<dt class="text-center pt-0 pb-3 p-md-4 pt-lg-1">連絡先</dt>
 												<dd>Name: Shiko Tamai</dd>
 												<dd>
 													Address:<br>
@@ -341,10 +338,10 @@ if ( !defined( 'ABSPATH' ) ) exit;
 												<dd><span class="sm">※国番号不要です。(日本国内から発信の場合)</span></dd>
 												<dd>mail: shiko.tamai@outlook.com</dd>
 											</dl>
-											<div class="col-12 text-center">
-												<a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
-												<a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
-												<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+											<div class="sns-share col-12 text-center">
+												<a href="https://www.facebook.com/shiko.tamai.1" target="_blank"><i class="fab fa-facebook-square"></i></a>
+												<a href="https://twitter.com/ShikouTamai" target="_blank"><i class="fab fa-twitter-square"></i></a>
+												<a href="https://www.instagram.com/shiko.tamai/" target="_blank"><i class="fab fa-instagram"></i></a>
 											</div>
 										</div>
 									</div>

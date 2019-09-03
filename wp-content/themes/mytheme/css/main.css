@@ -352,26 +352,8 @@ span.sm {
 }
 
 /* =========== Contact Section =========== */
-.info {
-  letter-spacing: .1rem;
-}
 
-.info dt {
-  font-size: 1.1rem;
-  letter-spacing: .7rem;
-}
-
-.info .svg-inline--fa {
-  color: #9999FF;
-  font-size: 2rem;
-  margin: 0 .5rem;
-}
-
-/* custom */
-.info input {
-  /*width: 382px;*/
-}
-.info input[type=submit] {
+.wpcf7 input[type=submit] {
   width: 150px;
   display: block;
   margin: 0 auto;
@@ -387,28 +369,48 @@ span.sm {
   line-height   : 1em;         /* 1行の高さ  */
   box-shadow    : 0px 0px 8px #666666;  /* 影の設定 */
   border        : 2px solid #ff0000;
-
 }
 
-.info input[type=submit]:hover {
+.wpcf7 input[type=submit]:hover {
   box-shadow    : none;        /* カーソル時の影消去 */
   color         : #ff0000;     /* 背景色     */
   background    : #ffffff;     /* 文字色     */
 }
 
-.info span {
+.wpcf7 span {
   display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.info span.wpcf7-not-valid-tip {
+.wpcf7 span.wpcf7-not-valid-tip {
     /*width: 374px;*/
     width: 334px;
     text-align: left;
     display: block;
 }
+div.wpcf7 p:last-of-type {
+  margin-bottom: 0;
+}
 
+div.wpcf7-validation-errors {
+  margin: 0;
+}
+
+.info {
+  letter-spacing: .1rem;
+}
+
+.info dt {
+  font-size: 1.1rem;
+  letter-spacing: .7rem;
+}
+
+.info .svg-inline--fa {
+  color: #9999FF;
+  font-size: 2rem;
+  margin: 0 .5rem;
+}
 
 /*============= TOP SCROLL =============*/
 .top-scroll svg.svg-inline--fa {
@@ -510,7 +512,14 @@ footer .row p {
   }
   /* =========== Portfolio Section =========== */
   /* =========== Contact Section =========== */
+  .info dt {
+    font-size: 1.3rem;
+    letter-spacing: .7rem;
+  }
 
+  .info dd {
+    font-size: 1.25rem;
+  }
 }
 
 /* =======================================
@@ -536,6 +545,9 @@ footer .row p {
   }
   .info span.wpcf7-not-valid-tip {
     width: 374px;
+  }
+  .sns-share {
+    margin-top: 5rem;
   }
 }
 
