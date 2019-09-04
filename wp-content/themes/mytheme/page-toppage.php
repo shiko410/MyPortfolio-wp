@@ -26,7 +26,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 							<!-- // Heading -->
 							<!--  Article -->
 							<!---Start Animation -->
-							<div class="v-cnt d-flex align-items-center mx-auto" data-aos="fade-up" data-aos-duration="2000">
+							<div class="align-items-center mx-auto" data-aos="fade-up" data-aos-duration="2000">
 								<!-- <h3 class="col-12 text-center"> -->
 									<!-- Webフリーランスへの挑戦 -->
 									<!-- </h3> -->
