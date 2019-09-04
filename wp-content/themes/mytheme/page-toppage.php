@@ -277,97 +277,113 @@ if ( !defined( 'ABSPATH' ) ) exit;
 			<!-- Start Portfolio Section -->
 			<div id="portfolio" class="offset">
 				<div class="full-screen dark"><!-- Full Screen -->
-					<div class="narrow">
+					<!-- <div class="narrow"> -->
 						<div class="container">
 							<div class="row">
 								<!-- Heading -->
-								<div class="col-12 text-center" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="700"  data-aos-offset="0">
+								<div class="col-12 text-center pt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="700"  data-aos-offset="0">
 									<h2 class="heading d-inline-block">portfolio</h2>
 									<div class="heading-underline"></div>
 									<span>- 制作物 -</span>
 								</div>
-								<div class="box col-12 d-flex">
-									<div class="mx-auto">
-										<?php // ▼ モーダルウィンドウ ?>
+								<div class="box col-12 mt-md-5 d-flex" data-aos="fade-down" data-aos-duration="2000">
+									<?php // ▼ モーダルウィンドウ ?>
+									<div class="swiper-custom-parent mx-auto">
+										<!-- Slider main container -->
 										<div class="swiper-container">
+											<!-- Additional required wrapper -->
 											<div class="swiper-wrapper">
-												<a href="<?php echo(get_theme_file_uri()); ?>/img/portfolio-1-1.png" class="modal-w">
-													<img src="<?php echo(get_theme_file_uri()); ?>/img/portfolio-1.png" class="swiper-slide" alt="portfolio1">
-												</a>
-												<a href="<?php echo(get_theme_file_uri()); ?>/img/portfolio-2-1.png" class="modal-w">
-													<img src="<?php echo(get_theme_file_uri()); ?>/img/portfolio-2.png" class="swiper-slide" alt="portfolio2">
-												</a>
+												<!-- Slides -->
+												<div class="swiper-slide">
+													<a href="<?php echo(get_theme_file_uri()); ?>/img/portfolio-1-1.png" class="modal-w">
+														<img class="p-img" src="<?php echo(get_theme_file_uri()); ?>/img/portfolio-1.png" alt="portfolio1">
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="<?php echo(get_theme_file_uri()); ?>/img/portfolio-2-1.png" class="modal-w">
+														<img class="p-img" src="<?php echo(get_theme_file_uri()); ?>/img/portfolio-2.png" alt="portfolio2">
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="<?php echo(get_theme_file_uri()); ?>/img/portfolio-2-1.png" class="modal-w">
+														<img class="p-img" src="<?php echo(get_theme_file_uri()); ?>/img/portfolio-2.png" alt="portfolio2">
+													</a>
+												</div>
+												<!-- // Slides -->
 											</div>
-											<div id="glayLayer"></div>
-											<div id="overLayer"></div>
-											<div class="close-m">閉じる</div>
-											<div class="swiper-pagination"></div>
-											<div class="swiper-button-prev"></div>
-											<div class="swiper-button-next"></div>
 										</div>
-										<?php // ▲ モーダルウィンドウ ?>
-
+										<!-- If we need pagination -->
+										<div class="swiper-pagination d-none d-sm-block"></div>
+										<!-- If we need navigation buttons -->
+										<div class="swiper-button-prev d-none d-sm-block"></div>
+										<div class="swiper-button-next d-none d-sm-block"></div>
+										<!-- // Additional required wrapper -->
+										<!--　// Slider main container -->
 									</div>
+									<?php // ▲ モーダルウィンドウ ?>
 								</div>
 							</div><!-- // Row -->
 						</div><!-- // .container -->
-					</div><!-- // Narrow -->
-					<div class="fixed-wrap">
-						<div class="fixed"></div><!-- ここで背景を設定する -->
-					</div>
-				</div><!-- // Full Screen --><!-- positon:relativeで背景枠を作成 -->
-			</div><!-- / #portfolio -->
-			<!-- End Portfolio Section -->
-			<!-- Start Contact Section -->
-			<div id="contact" class="offset">
-				<div class="full-screen dark"><!-- Full Screen -->
-					<div class="narrow">
-						<div class="container">
-							<div class="row">
-								<!-- Heading -->
-								<div class="col-12 text-center" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="700"  data-aos-offset="0">
-									<h2 class="heading d-inline-block">contact</h2>
-									<div class="heading-underline"></div>
-									<span>- お問い合わせ -</span>
-								</div>
-								<!-- Contact Form -->
-								<div class="d-flex col-12 col-lg-6 order-lg-2 pb-0 pt-lg-5">
-									<div class="info mx-auto">
-										<?php echo do_shortcode( '[contact-form-7 id="8" title="footer contact form"]' ); ?>
+						<!-- </div> --><!-- // Narrow -->
+						<div class="fixed-wrap">
+							<div class="fixed"></div><!-- ここで背景を設定する -->
+						</div>
+					</div><!-- // Full Screen --><!-- positon:relativeで背景枠を作成 -->
+				</div><!-- / #portfolio -->
+				<!-- End Portfolio Section -->
+				<!-- Start Contact Section -->
+				<div id="contact" class="offset">
+					<div class="full-screen dark"><!-- Full Screen -->
+						<div class="narrow">
+							<div class="container">
+								<div class="row">
+									<!-- Heading -->
+									<div class="col-12 text-center" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="700"  data-aos-offset="0">
+										<h2 class="heading d-inline-block">contact</h2>
+										<div class="heading-underline"></div>
+										<span>- お問い合わせ -</span>
 									</div>
-								</div>
-								<!-- // Contact Form -->
-								<!-- info -->
-								<div class="info d-flex col-12 col-lg-6 order-lg-1 pt-lg-5">
-									<div class="box mx-auto">
-										<dl>
-											<dt class="text-center pt-0 pb-3 p-md-4 pt-lg-1">連絡先</dt>
-											<dd>Name: Shiko Tamai</dd>
-											<dd>
-												Address:<br>
-												25/210 soi.29 Buakhao Village<br>
-												Ranmkhamheang Rd, Minburi,<br>
-												Bangkok, 10510, Thailand
-											</dd>
-											<dd>Tel: 050-6872-4557</dd>
-											<dd><span class="sm">※国番号不要です。(日本国内から発信の場合)</span></dd>
-											<dd>mail: shiko.tamai@outlook.com</dd>
-										</dl>
-										<div class="sns-share col-12 text-center">
-											<a href="https://www.facebook.com/shiko.tamai.1" target="_blank"><i class="fab fa-facebook-square"></i></a>
-											<a href="https://twitter.com/ShikouTamai" target="_blank"><i class="fab fa-twitter-square"></i></a>
-											<a href="https://www.instagram.com/shiko.tamai/" target="_blank"><i class="fab fa-instagram"></i></a>
+									<!-- Contact Form -->
+									<div class="d-flex col-12 col-lg-6 order-lg-2 pb-0 pt-lg-5">
+										<div class="info mx-auto">
+											<?php echo do_shortcode( '[contact-form-7 id="8" title="footer contact form"]' ); ?>
 										</div>
 									</div>
-								</div>
-								<!-- // info -->
-							</div><!-- // Row -->
-						</div><!-- // .container -->
-					</div><!-- // Narrow -->
-				</div><!-- // Full Screen --><!-- positon:relativeで背景枠を作成 -->
-			</div><!-- / #contact -->
-			<!-- End Contact Section -->
-		</main><!-- // main -->
-	</div>
+									<!-- // Contact Form -->
+									<!-- info -->
+									<div class="info d-flex col-12 col-lg-6 order-lg-1 pt-lg-5">
+										<div class="box mx-auto">
+											<dl>
+												<dt class="text-center pt-0 pb-3 p-md-4 pt-lg-1">連絡先</dt>
+												<dd>Name: Shiko Tamai</dd>
+												<dd>
+													Address:<br>
+													25/210 soi.29 Buakhao Village<br>
+													Ranmkhamheang Rd, Minburi,<br>
+													Bangkok, 10510, Thailand
+												</dd>
+												<dd>Tel: 050-6872-4557</dd>
+												<dd><span class="sm">※国番号不要です。(日本国内から発信の場合)</span></dd>
+												<dd>mail: shiko.tamai@outlook.com</dd>
+											</dl>
+											<div class="sns-share col-12 text-center">
+												<a href="https://www.facebook.com/shiko.tamai.1" target="_blank"><i class="fab fa-facebook-square"></i></a>
+												<a href="https://twitter.com/ShikouTamai" target="_blank"><i class="fab fa-twitter-square"></i></a>
+												<a href="https://www.instagram.com/shiko.tamai/" target="_blank"><i class="fab fa-instagram"></i></a>
+											</div>
+										</div>
+									</div>
+									<!-- // info -->
+								</div><!-- // Row -->
+							</div><!-- // .container -->
+						</div><!-- // Narrow -->
+					</div><!-- // Full Screen --><!-- positon:relativeで背景枠を作成 -->
+				</div><!-- / #contact -->
+				<!-- End Contact Section -->
+			</main><!-- // main -->
+		</div>
+		<div id="glayLayer"></div>
+		<div id="overLayer"></div>
+		<div class="close-m">閉じる</div>
 
-	<?php get_footer(); // footer.phpの読み込み ?>
+		<?php get_footer(); // footer.phpの読み込み ?>

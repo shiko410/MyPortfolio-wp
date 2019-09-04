@@ -54,6 +54,23 @@ $(function () { //when document loads completely.
         }
     });
 });
+/* ---------------------------------------------------------
+ ハンバガーメニューをクリックした時、背景を黒くする
+---------------------------------------------------------- */
+$(function () {
+  $('button.navbar-toggler').click(function(){
+  var show = $('#navbarResponsive').hasClass('show');
+  console.log(!show);
+  if (!show){
+    // showクラスがある時
+    $('nav').addClass('solid');
+  } else {
+    // showクラスがない時
+    $('nav').removeClass('solid');
+  }
+  });
+});
+
 
 /*========== BOUNCING DOWN ARROW ==========*/
 /* ---------------------------------------------------------
@@ -101,6 +118,53 @@ $(function() { //when document is ready
   });
 });
 
+/* ==== カルーセル機能(swiper)部分の記述 ===== */
+var swiper = new Swiper ('.swiper-container', {
+  // オプションパラメータ(一部のみ抜粋)
+  loop: true, // 最後のスライドまで到達した場合、最初に戻らずに続けてスライド可能にするか。
+  speed: 600, // スライドが切り替わるトランジション時間(ミリ秒)。
+  slidesPerView: 2, // 何枚のスライドを表示するか
+  spaceBetween: 0, // スライド間の余白サイズ(ピクセル)
+  direction: 'horizontal', // スライド方向。 'horizontal'(水平) か 'vertical'(垂直)。effectオプションが 'slide' 以外は無効。
+  effect: 'slide', // "slide", "fade"(フェード), "cube"(キューブ回転), "coverflow"(カバーフロー) または "flip"(平面回転)
+  // スライダーの自動再生
+  // autoplay: true 　のみなら既定値での自動再生
+  autoplay: {
+    delay: 3000, // スライドが切り替わるまでの表示時間(ミリ秒)
+    stopOnLast: false, // 最後のスライドまで表示されたら自動再生を中止するか
+    disableOnInteraction: false // ユーザーのスワイプ操作を検出したら自動再生を中止するか
+  },
+  // レスポンシブ化条件
+  breakpoints: {
+    // 980ピクセル幅以下になったら
+    // 980: {
+    //   slidesPerView: 3,
+    //   spaceBetween: 30
+    // },
+    // 576ピクセル幅以下になったら
+    768: {
+      slidesPerView: 1,
+      // spaceBetween: 20
+    }
+  },
+  // ページネーションを表示する場合
+  pagination: {
+    el: '.swiper-pagination', // ページネーションを表示するセレクタ
+    type: 'bullets', // 'bullets' 'fraction' 'progressbar' から選べる
+    clickable: true,
+  },
+  // 前後スライドへのナビゲーションを表示する場合
+  navigation: {
+    nextEl: '.swiper-button-next', // 次のスライドボタンのセレクタ
+    prevEl: '.swiper-button-prev', // 前のスライドボタンのセレクタ
+    // background-imgで画像変更OK
+  },
+  // スクロールバーを表示する場合
+  scrollbar: {
+    el: '.swiper-scrollbar', // スクロールバーを表示するセレクタ
+  }
+});
+
 
 /*========== MODAL WINDOW ==========*/
 /* ---------------------------------------------------------
@@ -116,6 +180,7 @@ $(function(){
         "<img src='" + $(this).attr("href") + "'>" )
       .addClass('zoom-in');
     $('body').css('overflow', 'hidden');
+    $('.swiper-custom-parent').css('visibility', 'hidden');
     return false;
   });
 
@@ -123,6 +188,7 @@ $(function(){
     $('#glayLayer, .close-m').fadeOut();
     $('#overLayer').fadeOut();
     $('body').css('overflow', 'auto');
+    $('.swiper-custom-parent').css('visibility', 'visible');
     if ($('#overLayer').hasClass('zoom-out')){$('#overLayer').removeClass('zoom-out')}
     return false;
   });
@@ -135,11 +201,13 @@ $('#overLayer').on('click', function() {
       $(this)
       .addClass('zoom-out').removeClass('zoom-in')
       ;
+      $('.close-m').css('top', '95%');
     } else {
       // もとに戻す
       $(this)
       .removeClass('zoom-out').addClass('zoom-in')
       ;
+      $('.close-m').css('top', '80%');
     }
 });
 });

@@ -68,11 +68,14 @@ body {
 
 /*====== JS setting ======*/
 /* NAVBAR TRANSPARENT TO SOLID(JS) */
-.navbar.solid {
+.navbar.solid{
   background: rgba(0, 0, 0, 0.7) !important;
   transition: background-color 1s ease 0s;
 }
 
+/*nav[aria-expanded="true"] {
+  background: rgba(0, 0, 0, 0.7) !important;
+}*/
 /* =======================================
                   Header
 ======================================= */
@@ -350,41 +353,62 @@ span.sm {
   background-image: url(../img/triangles.png) !important;
   z-index: -2;
 }
-
+/* =========== カルーセル =========== */
+.swiper-custom-parent{
+  /*border: 1px solid #ccc;*/
+  width: 400px;
+  height: 450px;
+  position: relative;
+}
 .swiper-container {
-  /*max-width: 700px;*/
-}
-.swiper-wrapper {
-  width: 100%;
-  height: 500px;
-}
-.swiper-wrapper img {
-  width: 350px;
+  position: relative;
+  /*border: 1px solid red;*/
+  width: 300px;
   height: 400px;
-  overflow-y: hidden;
+}
+#portfolio img.p-img { /* swiper内のimg*/
+  width: 300px;
+  height: 400px;
+  padding: 0 10px;
+  overflow: hidden;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 768px) {
+  .swiper-custom-parent{
+    width: 700px;
+  }
   .swiper-container {
-    width: 400px;
+    width: 600px;
   }
 }
-a.modal-w {
-    /*width: 300px;*/
-    /*height: 500px;*/
+/* 矢印ボタンの変更 */
+.swiper-button-prev{
+  background-image: url(../img/arrow-l.svg);
+  z-index: 0;
 }
-#portfolio img.swiper-slide {
-  width: 300px;
-  height: 500px;
+.swiper-button-next{
+  background-image: url(../img/arrow-r.svg);
+  z-index: 0;
 }
-
+.swiper-pagination {
+  width: 100%;
+  z-index: 0;
+}
+.swiper-pagination span {
+  margin: 20px 5px;
+  padding: 5px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #99f;
+}
+/* =========== モーダルウィンドウ =========== */
 #glayLayer {
   display: none; /* 初期状態 */
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
-  height: 100%;
+  z-index: 2000;
+  height: 100vh;
   width: 100%;
   background: rgba(0, 0, 0, .6);
 }
@@ -395,14 +419,14 @@ a.modal-w {
   left: 50%;
   -webkit- transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
-  z-index: 2;
+  z-index: 2001;
   width: 300px;
   height: 60%;
   overflow-y: scroll;
 }
-
 #overLayer img {
   width: 100%;
+  padding: 0 10px;
 }
 .zoom-in {
   cursor: zoom-in;
@@ -410,6 +434,7 @@ a.modal-w {
 #overLayer.zoom-out {
   width:90vw;
   max-width: 100%;
+  height: 85vh;
   cursor: zoom-out;
 }
 .close-m {
@@ -418,11 +443,10 @@ a.modal-w {
     top: 80%;
     left: 0;
     right: 0;
-    z-index: 3;
+    z-index: 2003;
     cursor: pointer;
     color: #fff;
     text-align: center;
-    /*margin-top: 70px;*/
 }
 /* =========== Contact Section =========== */
 
@@ -656,6 +680,26 @@ footer .row p {
   #service [data-aos=fade-up],
   [data-aos=fade-left] {
     transform: none;
+  }
+  #overLayer {
+    height: 100vh;
+    width: 100vw;
+  }
+  .zoom-in {
+
+  }
+  .zoom-out {
+    height: 100vh !important;
+    width: 100vw !important;
+  }
+  .close-m {
+    top: 90% !important;
+    background: #99f;
+    box-shadow: 0 0 8px #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100px;
+    margin: 0 auto;
   }
 }
 

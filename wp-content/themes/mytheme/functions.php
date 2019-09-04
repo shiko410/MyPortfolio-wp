@@ -19,6 +19,11 @@ function add_my_files() {
 		array(),
 		'4.3.1'
 	);
+	wp_enqueue_style('swiper_css',
+		'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css',
+		array(),
+		'4.5.0'
+	);
 	// CSS files
 	// wp_enqueue_style( $handle, $src, $deps, $ver, $media);
 	wp_enqueue_style('vegas_css', get_template_directory_uri() . '/css/vegas.min.css');
@@ -55,7 +60,12 @@ function add_my_files() {
 		'v5.5.0',
     	true //</body> 終了タグの前で読み込み
 	);
-
+	wp_enqueue_script( 'swiper_js',
+		'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js',
+		array(),
+		'4.5.0',
+    	true //</body> 終了タグの前で読み込み
+	);
 	// JavaScript files
 	// wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
 	wp_enqueue_script('vegas_js',
