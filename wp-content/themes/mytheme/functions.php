@@ -111,7 +111,16 @@ add_action('wp_enqueue_scripts', 'add_my_files');
 // add_filter('the_content','img_replace_filter');
 
 
+//絶対パス→相対パス
+function make_href_root_relative($input) {
+    return preg_replace('!http(s)?://' . $_SERVER['SERVER_NAME'] . '/!', '/', $input);
+}
 
+//パーマリンク絶対パス→相対パス
+function root_relative_permalinks($input) {
+    return make_href_root_relative($input);
+}
+add_filter( 'the_permalink', 'root_relative_permalinks' );
 
 
 

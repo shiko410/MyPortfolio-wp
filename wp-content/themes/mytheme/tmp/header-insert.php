@@ -13,7 +13,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 		<!-- ナビゲーション -->
 		<?php
-	//ユーザーカスタマイズ用(headerに挿入したいものがあれば以下に記述)
+		//ユーザーカスタマイズ用(headerに挿入したいものがあれば以下に記述)
 		get_template_part('tmp/header-navi');
 		?>
 		<!-- // ナビゲーション -->

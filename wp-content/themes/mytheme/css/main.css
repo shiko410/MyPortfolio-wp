@@ -337,6 +337,9 @@ span.sm {
   font-size: 1.6rem;
   letter-spacing: .3rem;
 }
+#service .col-md-6.col-lg-4:last-of-type h3 {
+  letter-spacing: 0rem;
+}
 
 #service p {
   letter-spacing: .1rem;
@@ -628,8 +631,8 @@ footer .row p {
     font-size: 1.1rem;
   }
   .offset:before {
-    height: 3.9rem;
-    margin-top: -3.9rem;
+    height: 4.1rem;
+    margin-top: -4.1rem;
   }
   .my-photo img {
     width: 200px;

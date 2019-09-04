@@ -37,7 +37,8 @@ get_template_part('tmp/head-insert'); // ファビコン ?>
 
 <?php
 //ユーザーカスタマイズ用(headerの前に挿入したいものがあれば以下に記述)
-// get_template_part('tmp/body-top-insert');
+// テスト用として使用
+get_template_part('tmp/body-top-insert');
 
 //ユーザーカスタマイズ用(headerに挿入したいものがあれば以下に記述)
 get_template_part('tmp/header-insert');

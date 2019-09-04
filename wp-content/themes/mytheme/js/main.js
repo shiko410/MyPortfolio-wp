@@ -107,7 +107,7 @@ $(function(){
     ],
      delay: 5000, //スライドまでの時間ををミリ秒単位で設定
      timer: true, //タイマーバーの表示/非表示を切り替え
-     overlay: 'http://localhost/My-Portfolio-wp/wp-content/themes/mytheme/img/overlays/07.png', //オーバーレイする画像の設定
+     overlay: imgPass + 'img/overlays/07.png', //オーバーレイする画像の設定
      animation: 'random', //スライドのアニメーションを設定
      transition: 'blur', //スライド間のエフェクトを設定
      transitionDuration: 1000 //エフェクト時間をミリ秒単位で設定
