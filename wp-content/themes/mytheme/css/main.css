@@ -56,7 +56,7 @@ body {
 }
 
 #navbarResponsive ul li a {
-  font-size: 1.6rem;
+  font-size: .9rem;
   color: #fff;
   padding: .8rem;
 }
@@ -68,10 +68,11 @@ body {
 
 /*====== JS setting ======*/
 /* NAVBAR TRANSPARENT TO SOLID(JS) */
-.navbar.solid{
+.navbar.solid, .solid-t{
   background: rgba(0, 0, 0, 0.7) !important;
   transition: background-color 1s ease 0s;
 }
+
 
 /*nav[aria-expanded="true"] {
   background: rgba(0, 0, 0, 0.7) !important;
@@ -554,7 +555,7 @@ footer .row p {
   }
   /* ============== Header ============== */
   #navbarResponsive ul li a {
-    font-size: .9rem;
+    font-size: 1rem;
   }
   /* ============== Header ============== */
   .caption h1 {

@@ -54,19 +54,29 @@ $(function () { //when document loads completely.
         }
     });
 });
+
+/* ---------------------------------------------------------
+ ハンバガーメニューでメニュー部分をクリックした時、メニューを閉じる
+---------------------------------------------------------- */
+$(document).ready(function () {
+$(".navbar-nav li a").click(function(event) {
+$(".navbar-collapse").collapse('hide');
+});
+});
+
+
 /* ---------------------------------------------------------
  ハンバガーメニューをクリックした時、背景を黒くする
 ---------------------------------------------------------- */
 $(function () {
   $('button.navbar-toggler').click(function(){
   var show = $('#navbarResponsive').hasClass('show');
-  console.log(!show);
   if (!show){
     // showクラスがある時
-    $('nav').addClass('solid');
+    $('nav').addClass('solid-t');
   } else {
     // showクラスがない時
-    $('nav').removeClass('solid');
+    $('nav').removeClass('solid-t');
   }
   });
 });

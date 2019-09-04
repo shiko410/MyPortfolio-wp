@@ -33,7 +33,7 @@ get_template_part('tmp/head-insert'); // ファビコン ?>
 </head>
 <?php // ====== HEADはここまで BODY開始 ==========	?>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> data-spy="scroll" data-target="#navbarResponsive">
 
 <?php
 //ユーザーカスタマイズ用(headerの前に挿入したいものがあれば以下に記述)
