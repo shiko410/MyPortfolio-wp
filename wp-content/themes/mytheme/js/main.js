@@ -96,7 +96,9 @@ $(window).scroll(function(){ //browser scroll
 
 /* ==== スライドショー機能(vegas)部分の記述 ===== */
 $(function(){
-  var imgPass = 'http://localhost/My-Portfolio-wp/wp-content/themes/mytheme/';
+  var imgPass = $('#php2jquery').val();
+
+  console.log(imgPass);
 
   $('.home-inner').vegas({ //背景画像でスライドショーしたい場所の設定
     slides: [

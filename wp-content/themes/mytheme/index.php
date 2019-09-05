@@ -7,7 +7,6 @@
  */
 if ( !defined( 'ABSPATH' ) ) exit;
 ?>
-
 <?php get_header(); // header.phpの読み込み ?>
 
 <?php get_footer(); // footer.phpの読み込み ?>

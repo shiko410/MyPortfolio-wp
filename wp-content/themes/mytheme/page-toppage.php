@@ -6,9 +6,10 @@
  * @license: http://www.gnu.org/licenses/gpl-2.0.html GPL v2 or later
  */
 if ( !defined( 'ABSPATH' ) ) exit;
-define("PUBLIC_DIR", dirname(__FILE__). "../");
 ?>
+<?php
 
+ ?>
 <?php get_header(); // header.phpの読み込み ?>
 
 <div class="contents">
@@ -182,4 +183,210 @@ define("PUBLIC_DIR", dirname(__FILE__). "../");
 									<div class="icons row p-0 p-md-3">
 										<div class="skl-icons col-12 col-md-6 d-flex mx-auto p-0">
 											<div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
-												<im
+												<img src="<?php echo(get_theme_file_uri()); ?>/img/icon/jquery-logo.png" alt="jQuery">
+											</div>
+											<div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
+												<img src="<?php echo(get_theme_file_uri()); ?>/img/icon/laravel-color.svg" alt="laravel">
+											</div>
+											<div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
+												<img src="<?php echo(get_theme_file_uri()); ?>/img/icon/sass-color.svg" alt="sass">
+											</div>
+										</div>
+										<div class="skl-icons col-12 col-md-6 d-flex mx-auto p-0">
+											<div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
+												<img src="<?php echo(get_theme_file_uri()); ?>/img/icon/github-logo.png" alt="github">
+											</div>
+											<div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
+												<img src="<?php echo(get_theme_file_uri()); ?>/img/icon/adobe-illustrator-cs6.png" alt="illustrator">
+											</div>
+											<div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
+												<img src="<?php echo(get_theme_file_uri()); ?>/img/icon/adobe-photoshop-cs6.png" alt="photoshop">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="box" data-aos="fade-down" data-aos-duration="2000">
+									<div class="box skls col-12 text-center">
+										<p class="p-3 mb-0">
+											HTML, CSS, JavaScript, PHP, WordPress jQuery, Laravel, Saas, MAMP, MySQL, Word, Excel, VBA, Power Point, Illustrator, Photoshop
+										</p>
+									</div>
+									<div class="box other-skl b-offset col-12 pt-0">
+										<p class="text-center mb-0">
+											その他のスキル
+										</p>
+										<span class="d-block text-center">TOEIC 860, 日本語教師資格</span>
+									</div>
+								</div>
+							</div><!-- // Row -->
+						</div><!-- // .container -->
+					</div><!-- // Narrow -->
+					<div class="fixed-wrap">
+						<div class="fixed"></div><!-- ここで背景を設定する -->
+					</div>
+				</div><!-- // Full Screen --><!-- positon:relativeで背景枠を作成 -->
+			</div><!-- / #skill -->
+			<!-- End Skill Section -->
+			<!-- Start Service Section -->
+			<div id="service" class="offset">
+				<div class="full-screen"><!-- Full Screen -->
+					<div class="narrow">
+						<div class="container">
+							<div class="row text-center" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="700"  data-aos-offset="0">
+								<!-- Heading -->
+								<div class="col-12 pb-0">
+									<h2 class="heading d-inline-block">service</h2>
+									<div class="heading-underline"></div>
+									<span>- サービス -</span>
+								</div>
+								<!-- // Heading -->
+								<div class="box d-flex pt-md-5 pb-md-5">
+									<div class="row pt-md-5 pb-md-5">
+										<div class="col-md-6 col-lg-4 mx-auto" data-aos="fade-right" data-aos-duration="1000">
+											<h3>ホームページ制作</h3>
+											<div class="service p-3 p-md-5">
+												<i class="fab fa-wordpress fa-6x"></i>
+											</div>
+											<p class="mb-0 pt-md-3 pb-md-3">
+												企画から制作、運営サポートまで、お気軽にご相談ください。レスポンシブ化にも対応いたします。
+											</p>
+										</div>
+										<div class="col-md-6 col-lg-4 mx-auto" data-aos="fade-up" data-aos-duration="1000">
+											<h3>LP制作</h3>
+											<div class="service p-3 p-md-5">
+												<i class="fas fa-desktop fa-5x"></i>
+											</div>
+											<p class="mb-0 pt-md-3 pb-md-3">
+												商品紹介、イベント予約、キャンペーンなど集客アップにつながるLP制作を承ります。
+											</p>
+										</div>
+										<div class="col-md-6 mx-auto col-lg-4 b-offset" data-aos="fade-left" data-aos-duration="1000">
+											<h3>コーポレートサイト</h3>
+											<div class="service p-3 p-md-5">
+												<i class="fas fa-code fa-5x"></i>
+											</div>
+											<p class="mb-0 pt-md-3 pb-md-3">
+												会社のイメージを重視しながら会社概要やお知らせの掲載、所在地地図の設置などに対応します。
+											</p>
+										</div>
+									</div>
+								</div>
+							</div><!-- // Row -->
+						</div><!-- // .container -->
+					</div><!-- // Narrow -->
+				</div><!-- // Full Screen --><!-- positon:relativeで背景枠を作成 -->
+			</div><!-- / #service -->
+			<!-- End Service Section -->
+			<!-- Start Portfolio Section -->
+			<div id="portfolio" class="offset">
+				<div class="full-screen dark"><!-- Full Screen -->
+					<!-- <div class="narrow"> -->
+						<div class="container">
+							<div class="row">
+								<!-- Heading -->
+								<div class="col-12 text-center pt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="700"  data-aos-offset="0">
+									<h2 class="heading d-inline-block">portfolio</h2>
+									<div class="heading-underline"></div>
+									<span>- 制作物 -</span>
+								</div>
+								<div class="box col-12 mb-md-3 pt-md-5 pb-md-5 d-flex" data-aos="fade-down" data-aos-duration="2000">
+									<?php // ▼ モーダルウィンドウ ?>
+									<div class="swiper-custom-parent mx-auto">
+										<!-- Slider main container -->
+										<div class="swiper-container">
+											<!-- Additional required wrapper -->
+											<div class="swiper-wrapper">
+												<!-- Slides -->
+												<div class="swiper-slide">
+													<a href="<?php echo(get_theme_file_uri()); ?>/img/portfolio-1-1.png" class="modal-w">
+														<img class="p-img" src="<?php echo(get_theme_file_uri()); ?>/img/portfolio-1.png" alt="portfolio1">
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="<?php echo(get_theme_file_uri()); ?>/img/portfolio-2-1.png" class="modal-w">
+														<img class="p-img" src="<?php echo(get_theme_file_uri()); ?>/img/portfolio-2.png" alt="portfolio2">
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="<?php echo(get_theme_file_uri()); ?>/img/portfolio-2-1.png" class="modal-w">
+														<img class="p-img" src="<?php echo(get_theme_file_uri()); ?>/img/portfolio-2.png" alt="portfolio2">
+													</a>
+												</div>
+												<!-- // Slides -->
+											</div>
+										</div>
+										<!-- If we need pagination -->
+										<div class="swiper-pagination d-none d-sm-block"></div>
+										<!-- If we need navigation buttons -->
+										<div class="swiper-button-prev d-none d-sm-block"></div>
+										<div class="swiper-button-next d-none d-sm-block"></div>
+										<!-- // Additional required wrapper -->
+										<!--　// Slider main container -->
+									</div>
+									<?php // ▲ モーダルウィンドウ ?>
+								</div>
+							</div><!-- // Row -->
+						</div><!-- // .container -->
+						<!-- </div> --><!-- // Narrow -->
+						<div class="fixed-wrap">
+							<div class="fixed"></div><!-- ここで背景を設定する -->
+						</div>
+					</div><!-- // Full Screen --><!-- positon:relativeで背景枠を作成 -->
+				</div><!-- / #portfolio -->
+				<!-- End Portfolio Section -->
+				<!-- Start Contact Section -->
+				<div id="contact" class="offset">
+					<div class="full-screen dark"><!-- Full Screen -->
+						<div class="narrow">
+							<div class="container">
+								<div class="row">
+									<!-- Heading -->
+									<div class="col-12 text-center" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="700"  data-aos-offset="0">
+										<h2 class="heading d-inline-block">contact</h2>
+										<div class="heading-underline"></div>
+										<span>- お問い合わせ -</span>
+									</div>
+									<!-- Contact Form -->
+									<div class="d-flex col-12 col-lg-6 order-lg-2 pb-0 pt-lg-5">
+										<div class="info mx-auto">
+											<?php echo do_shortcode( '[contact-form-7 id="8" title="footer contact form"]' ); ?>
+										</div>
+									</div>
+									<!-- // Contact Form -->
+									<!-- info -->
+									<div class="info d-flex col-12 col-lg-6 order-lg-1 pt-lg-5">
+										<div class="box mx-auto">
+											<dl>
+												<dt class="text-center pt-0 pb-3 p-md-4 pt-lg-1">連絡先</dt>
+												<dd>Name: Shiko Tamai</dd>
+												<dd>
+													Address:<br>
+													25/210 soi.29 Buakhao Village<br>
+													Ranmkhamheang Rd, Minburi,<br>
+													Bangkok, 10510, Thailand
+												</dd>
+												<dd>Tel: 050-6872-4557</dd>
+												<dd><span class="sm">※国番号不要です。(日本国内から発信の場合)</span></dd>
+												<dd>mail: shiko.tamai@outlook.com</dd>
+											</dl>
+											<div class="sns-share col-12 text-center">
+												<a href="https://www.facebook.com/shiko.tamai.1" target="_blank"><i class="fab fa-facebook-square"></i></a>
+												<a href="https://twitter.com/ShikouTamai" target="_blank"><i class="fab fa-twitter-square"></i></a>
+												<a href="https://www.instagram.com/shiko.tamai/" target="_blank"><i class="fab fa-instagram"></i></a>
+											</div>
+										</div>
+									</div>
+									<!-- // info -->
+								</div><!-- // Row -->
+							</div><!-- // .container -->
+						</div><!-- // Narrow -->
+					</div><!-- // Full Screen --><!-- positon:relativeで背景枠を作成 -->
+				</div><!-- / #contact -->
+				<!-- End Contact Section -->
+			</main><!-- // main -->
+		</div>
+		<div id="glayLayer"></div>
+		<div id="overLayer"></div>
+		<div class="close-m">閉じる</div>
+
+		<?php get_footer(); // footer.phpの読み込み ?>

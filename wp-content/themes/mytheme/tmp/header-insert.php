@@ -13,7 +13,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 		<!-- ナビゲーション -->
 		<?php
-		//ユーザーカスタマイズ用(headerに挿入したいものがあれば以下に記述)
+	//ユーザーカスタマイズ用(headerに挿入したいものがあれば以下に記述)
 		get_template_part('tmp/header-navi');
 		?>
 		<!-- // ナビゲーション -->
@@ -23,6 +23,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 			<div class="home-wrap">
 				<div class="home-inner">
 					<!-- ここで背景を設定する -->
+					 <input id="php2jquery" type="hidden" value="<?php echo(get_theme_file_uri()); ?>/" name="php2jquery">
 				</div>
 			</div>
 		</div>
