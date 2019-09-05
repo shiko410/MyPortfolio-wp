@@ -299,17 +299,12 @@ if ( !defined( 'ABSPATH' ) ) exit;
 												<!-- Slides -->
 												<div class="swiper-slide">
 													<a href="<?php echo(get_theme_file_uri()); ?>/img/portfolio-1-1.png" class="modal-w">
-														<img class="p-img" src="<?php echo(get_theme_file_uri()); ?>/img/portfolio-1.png" alt="portfolio1">
+														<img class="p-img" src="<?php echo(get_theme_file_uri()); ?>/img/portfolio-1-0.png" alt="portfolio1">
 													</a>
 												</div>
 												<div class="swiper-slide">
 													<a href="<?php echo(get_theme_file_uri()); ?>/img/portfolio-2-1.png" class="modal-w">
-														<img class="p-img" src="<?php echo(get_theme_file_uri()); ?>/img/portfolio-2.png" alt="portfolio2">
-													</a>
-												</div>
-												<div class="swiper-slide">
-													<a href="<?php echo(get_theme_file_uri()); ?>/img/portfolio-2-1.png" class="modal-w">
-														<img class="p-img" src="<?php echo(get_theme_file_uri()); ?>/img/portfolio-2.png" alt="portfolio2">
+														<img class="p-img" src="<?php echo(get_theme_file_uri()); ?>/img/portfolio-2-0.png" alt="portfolio2">
 													</a>
 												</div>
 												<!-- // Slides -->

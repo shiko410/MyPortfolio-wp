@@ -98,8 +98,6 @@ $(window).scroll(function(){ //browser scroll
 $(function(){
   var imgPass = $('#php2jquery').val();
 
-  console.log(imgPass);
-
   $('.home-inner').vegas({ //背景画像でスライドショーしたい場所の設定
     slides: [
      { src: imgPass + 'img/vegas/thai1.jpg' }, //スライドする画像を配列で設定
@@ -223,13 +221,6 @@ $('#overLayer').on('click', function() {
     }
 });
 });
-
-
-
-
-
-
-
 
 
 /*========== Fade in letter by letter ==========*/
